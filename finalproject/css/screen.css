@@ -1,0 +1,227 @@
+* {
+box-sizing:border-box;
+}
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+
+body{
+	background-image: url('../media/multimedia-background.jpg');
+    background-repeat:no-repeat;
+	
+	
+}
+
+ section{
+	background-color:white;
+	opacity:0.9;
+	padding:1%;
+	border:5px groove darkgreen;
+	border-radius:35px;
+	margin-right:1%;
+	overflow:auto;
+	height:300px;
+}
+header {
+	background-color:white;
+	background-image: url(../media/pit.jpg);
+    padding:1%;
+	border:5px groove darkgreen;
+	border-radius:25px;
+	margin-right:1%;
+	width:100%;
+}
+
+h1 {
+    text-align: center;
+    color: green;
+    font-family:"Calisto MT", serif;
+	opacity:0.9;
+	font-size:36pt;
+	text-shadow:1px 1px 1px black;
+}
+
+h2 {
+	font-family:"Calisto MT", serif;
+	color:rgba(160, 209, 154, 0.281);
+	text-shadow:1px 1px 1px rgb(6, 85, 37);
+	font-size:20pt;
+}
+h3 {
+    font-family:"Calisto MT", serif;
+    color: green;
+    text-shadow: black;
+    font-size: 12pt;
+}
+audio, video{
+	margin-left: 20px;
+}
+.pulse{
+    animation: pulse 5s infinite;
+}
+
+@keyframes pulse{
+    0% {color:green;text-shadow:1px 1px black;}
+    50% {color:black;text-shadow:10px 10px 2px lemonchiffon;}
+    100%{color:green;text-shadow:1px 1px darkgray;}
+}
+footer {
+    text-align:left;
+    background-color: white;
+    padding:1%;
+	border:5px groove darkgreen;
+	border-radius:25px;
+    margin-right:1%;
+}
+hr {
+	color:black;
+	height:6px;
+	opacity:0.3;
+}
+a{
+	margin-left:20px;
+}
+a:link{
+	color:darkgreen;
+	font-family:"calisto mt", calibri, cambria, serif;
+	text-decoration:underline;
+}
+a:visited{
+	color:green;
+	text-decoration:underline;
+}
+a:active{
+	color:darkgoldenrod;
+	text-decoration:none;
+}
+a:hover{
+	color:white;
+	background-color:darkgreen;
+	text-decoration:none;
+}
+
+.indent{
+	padding-left:20px;
+}
+
+
+.sidenav {
+		height: 100%;
+		width: 0;
+		position: fixed;
+		z-index: 1;
+		top: 0;
+		left: 0;
+		background-image: url(../media/sebastian1.png);
+		background-repeat: no-repeat;
+		overflow-x: hidden;
+		transition: 0.5s;
+		padding-top: 60px;
+}
+	   
+.sidenav a {
+		padding: 8px 8px 8px 32px;
+		font-family: "Calisto MT", serif;
+		text-decoration: none;
+		font-size: 25px;
+		color: green;
+		text-shadow:1px 1px 1px black;
+		display: block;
+		transition: 0.3s;
+}
+	   
+.sidenav a:hover {
+		color: #f1f1f1;
+}
+	   
+.sidenav .closebtn {
+		position: absolute;
+		top: 0;
+		right: 25px;
+		font-size: 36px;
+		margin-left: 50px;
+}
+	   
+#main {
+		transition: margin-left .5s;
+		color:green;
+		text-shadow:1px 1px 1px black;
+		padding: 16px;
+}
+	   
+@media screen and (max-height: 450px) {
+		.sidenav {padding-top: 15px;} /* decreases padding-top for mobile */
+		.sidenav a {font-size: 18px;} /* decreases link font-size for mobile */
+}
+		
+footer{
+    align-items:center;
+    background-color:white;
+    color: green;
+    padding:5px
+}
+.icon-bar{
+	width:100%; /* Full-width */
+	background-color: white;
+	overflow:auto;/* OVerflow due to float */
+}
+.icon-bar a{
+	float:left; /* Float links side by side */
+	text-align:center; /* Center-align text */
+	width: 20%; /* Equal width (3 icons with 20% width each=100%) */
+	padding: 12px 0; /* Some top and bottom padding */
+	transition: all 0.3s ease; /* Add transition for hover effects */
+	color:green; /* black text color */
+	font-size: 36px; /* Increased font size */
+}
+.icon-bar a:hover{
+    background-color: white; /* Add a hover color */
+    color:black;
+}
+/* For mobile phones: */
+[class*="col-"] {
+    width: 100%; /* this is being overridden in tablet and desktop */
+    float:left; /* setting defaults for everything including tablet and desktop */
+    padding:15px; /* setting defaults for everything including tablet and desktop */
+
+}
+@media only screen and (min-width: 600px) {
+/* For tablets: */
+    .col-m-1 {width: 8.33%;}
+    .col-m-2 {width: 16.66%;}
+    .col-m-3 {width: 25%;}
+    .col-m-4 {width: 33.33%;}
+    .col-m-5 {width: 41.66%;}
+    .col-m-6 {width: 50%;}
+    .col-m-7 {width: 58.33%;}
+    .col-m-8 {width: 66.66%;}
+    .col-m-9 {width: 75%;}
+    .col-m-10 {width: 83.33%;}
+    .col-m-11 {width: 91.66%;}
+    .col-m-12 {width: 100%;}
+}
+@media only screen and (min-width: 768px) {
+/* For desktop: */
+    .col-1 {width: 8.33%;}
+    .col-2 {width: 16.66%;}
+    .col-3 {width: 25%;}
+    .col-4 {width: 33.33%;}
+    .col-5 {width: 41.66%;}
+    .col-6 {width: 50%;}
+    .col-7 {width: 58.33%;}
+    .col-8 {width: 66.66%;}
+    .col-9 {width: 75%;}
+    .col-10 {width: 83.33%;}
+    .col-11 {width: 91.66%;}
+    .col-12 {width: 100%;}
+    body{
+        background:url('../media/multimedia-background.jpg');
+        background-repeat:no-repeat;
+        background-position:center top;
+        background-size:cover;
+        background-color:#111;
+    }
+}
